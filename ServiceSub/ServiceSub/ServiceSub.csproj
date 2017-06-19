@@ -185,6 +185,8 @@
     <Content Include="Views\Subscriber\Subscribe.cshtml" />
     <Content Include="Views\Subscriber\Unsubscribe.cshtml" />
     <Content Include="Views\Subscriber\List.cshtml" />
+    <Content Include="Views\Newsletter\Send.cshtml" />
+    <Content Include="Views\Newsletter\Sent.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
@@ -226,9 +228,7 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Newsletter\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
