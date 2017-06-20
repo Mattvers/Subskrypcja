@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Zalogowano pomyślnie";
+}
+
+<h2>Zalogowano pomyślnie</h2>
+
+@if(Session["LogedUserFullName"] != null)
+{
+    <text>
+        Witaj @Session["LogedUserFullName"].ToString() w serwisie Subskrypcja.
+    </text>
+}
+
