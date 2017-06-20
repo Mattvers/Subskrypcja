@@ -160,6 +160,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\MailHelper.cs" />
+    <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Newsletter.cs" />
     <Compile Include="Models\Subscriber.cs" />
     <Compile Include="Models\SubscriptionContext.cs" />
