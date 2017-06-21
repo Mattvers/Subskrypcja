@@ -1,13 +1,25 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Index";   
 }
 
 <section class="featured">
     <div class="content-wrapper">
         <hgroup class="title">
-            <h1>@ViewBag.Message</h1>
-        </hgroup>
+            <h1>@ViewBag.Message</h1>           
+        </hgroup>       
+    </div>
+</section>
+
+<section>
+    <div class="content-wrapper">
+        <table class="table">           
+            <tr>
+                <th align="right">                
+                        @Html.ActionLink("Zaloguj", "Login", "Administrator")                   
+                </th>
+            </tr>
+        </table>
     </div>
 </section>
 
