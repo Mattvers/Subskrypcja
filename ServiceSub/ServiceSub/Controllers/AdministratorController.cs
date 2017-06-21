@@ -11,18 +11,18 @@ namespace ServiceSub.Controllers
     [Authorize]
     [AllowAnonymous]
     public class AdministratorController : Controller
-    {       
+    {     
         public ActionResult Login()
         {
             return View();
-        }     
-        
-        [HttpPost]       
+        }
+
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Login(Users u)
         {
             // section for post login
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 using (ServiceSubEntities dc = new ServiceSubEntities())
                 {
@@ -42,13 +42,18 @@ namespace ServiceSub.Controllers
         public ActionResult AfterLogin()
         {
             if (Session["LogedUserID"] != null)
-            {
-                return View();
+            {               
+                return RedirectToAction("AdminIndex");
             }
             else
             {
                 return RedirectToAction("Index");
             }
+        }
+
+        public ActionResult AdminIndex()
+        {
+            return View();
         }
     }
 }

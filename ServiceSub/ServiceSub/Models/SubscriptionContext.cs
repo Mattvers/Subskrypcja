@@ -9,7 +9,7 @@ namespace ServiceSub.Models
     public class SubscriptionContext : DbContext
     {
         public SubscriptionContext()
-            :base ("ServiceSub")
+            :base ("ServiceSub.mdf")
         {
         }
 
